@@ -1,0 +1,16 @@
+services:
+  db-electron:
+    image: postgres:15
+    container_name: pg_db_electron
+    restart: always
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypass
+      POSTGRES_DB: electron_app
+    ports:
+      - "5433:5432" # host:container
+    volumes:
+      - pgdata_electron:/var/lib/postgresql/data
+
+volumes:
+  pgdata_electron:
