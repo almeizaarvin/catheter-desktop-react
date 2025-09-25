@@ -12,6 +12,7 @@ import ScenarioCreate4 from "./pages/ScenarioCreate4";
 import ScenarioCreate5 from "./pages/ScenarioCreate5";
 import ResultHistory from "./pages/ResultHistory";
 import ResultDetail from "./pages/ResultDetail";
+import ScenarioPreview from "./pages/ScenarioPreview";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/scenario-create-5" element={<ScenarioCreate5 />} />
         <Route path="/result-history" element={<ResultHistory />} />
         <Route path="/result-detail" element={<ResultDetail />} />
+        <Route path="/scenario-preview" element={<ScenarioPreview />} />
 
       </Routes>
     </HashRouter>

@@ -33,8 +33,7 @@ export default function ToolsTypeSelect() {
 
   const handleNext = () => {
     if (!selectedTool) return;
-    alert(`Lanjut ke tahap berikutnya dengan pilihan ${selectedTool}`);
-    // navigate("/next-page");
+    navigate("/scenario-preview");
   };
 
   return (
