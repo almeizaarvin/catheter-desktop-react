@@ -9,6 +9,7 @@ import ScenarioCreate from "./pages/ScenarioCreate";
 import ScenarioCreate2 from "./pages/ScenarioCreate2";
 import ScenarioCreate3 from "./pages/ScenarioCreate3";
 import ScenarioCreate4 from "./pages/ScenarioCreate4";
+import ScenarioCreate5 from "./pages/ScenarioCreate5";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/scenario-create-2" element={<ScenarioCreate2 />} />
         <Route path="/scenario-create-3" element={<ScenarioCreate3 />} />
         <Route path="/scenario-create-4" element={<ScenarioCreate4 />} />
+        <Route path="/scenario-create-5" element={<ScenarioCreate5 />} />
 
       </Routes>
     </HashRouter>
