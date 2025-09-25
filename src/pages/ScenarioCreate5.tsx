@@ -21,7 +21,7 @@ const ScenarioPreview: React.FC = () => {
 
   const handleNewScenario = () => {
     if (!scenarioName.trim()) {
-      showToast("warning", "⚠️ Nama skenario harus diisi dulu!");
+      showToast("warning", "⚠️ Nama skenario harus diisi!");
       return;
     }
 

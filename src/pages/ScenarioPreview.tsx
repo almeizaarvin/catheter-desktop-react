@@ -6,7 +6,7 @@ export default function ScenarioPreview() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/scenario-select"); // balik ke halaman pilih skenario
+    navigate("/scenario-select");
   };
 
   const handleLaunch = () => {
@@ -55,7 +55,7 @@ export default function ScenarioPreview() {
       </main>
 
       {/* FOOTER */}
-      <footer className="flex justify-between p-6">
+      <footer className="flex items-center justify-between p-6">
         {/* Back */}
         <button
           onClick={handleBack}
@@ -64,13 +64,16 @@ export default function ScenarioPreview() {
           ← Back
         </button>
 
-        {/* Launch */}
-        <button
-          onClick={handleLaunch}
-          className="px-6 py-3 rounded-xl font-semibold transition-all bg-gradient-to-r from-yellow-400 to-yellow-500 text-white shadow-md hover:shadow-lg"
-        >
-          🚀 Launch
-        </button>
+        <div className="flex-1 flex justify-center">
+          <button
+            onClick={handleLaunch}
+            className="px-10 py-4 rounded-2xl font-bold text-lg transition-all bg-gradient-to-r from-yellow-400 to-yellow-500 text-white shadow-xl hover:shadow-2xl"
+          >
+            🚀 Launch
+          </button>
+        </div>
+
+        <div className="w-[88px]" /> 
       </footer>
     </div>
   );

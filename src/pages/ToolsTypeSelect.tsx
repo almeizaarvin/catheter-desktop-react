@@ -41,11 +41,10 @@ export default function ToolsTypeSelect() {
       {/* HEADER */}
       <header className="p-6">
         <h1 className="text-2xl font-semibold text-yellow-400">
-          Select Tool Type
+          Pilih Peralatan
         </h1>
         <p className="mt-2 text-gray-300 text-lg">
-          <strong>Guide Wire</strong> <span className="mx-2">&gt;</span> Catheter{" "}
-          <span className="mx-2">&gt;</span> Select Type
+          Guide Wire <span className="mx-2">&gt;</span>  <strong>Catheter</strong>{" "}
         </p>
       </header>
 
